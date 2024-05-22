@@ -23,5 +23,6 @@
         android:layoutDirection="ltr"
         android:layoutMode="clipBounds"
         app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="#B71111"
         app:menu="@menu/activity_main_drawer" />
 </androidx.drawerlayout.widget.DrawerLayout>
