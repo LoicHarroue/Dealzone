@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,30 @@
     <title>Responsive Navbar using HTML, CSS and Javascript</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="header-left">
             <div class="logo">
-                <img src="./logo.png" alt="">
+                <img src="./logo.png" alt="logo" class="logo">
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="" class="active">Home</a>
+                        <a href="">Home</a>
                     </li>
                     <li>
-                        <a href="">Products</a>
+                        <a href="#">Products</a>
                     </li>
                     <li>
                         <a href="">Pricing</a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="about.html">About</a>
                     </li>
-                    <input type="text" maxlength="12" placeholder="Rechercher..." class="searchbar" />
+                    <div class="searchbarr">
+                        <input type="text" maxlength="12" placeholder="Rechercher..." class="searchbar" />
+                    </div>
                 </ul>
                 <div class="login-signup">
                     <a href="">Login</a> or <a href="">Signup</a>
@@ -45,12 +49,38 @@
             </div>
         </div>
     </header>
+    <div class="card-container">
+        <div class="card">
+            <img src="./pictures/iphone.png" class="article" alt="article">
+            <h3>Iphone 12 64Go Purple</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <div class="card">
+            <img src="./pictures/casque.png" alt="article" class="article">
+            <h3>Casque SHOEI</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <div class="card">
+            <img src="./pictures/montre.png" alt="article" class="article">
+            <h3>Montre Tissot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
     <script>
         hamburger = document.querySelector(".hamburger");
         nav = document.querySelector("nav");
-        hamburger.onclick = function() {
+        hamburger.onclick = function () {
             nav.classList.toggle("active");
         }
     </script>
 </body>
+
 </html>
