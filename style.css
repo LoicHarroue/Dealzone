@@ -87,43 +87,77 @@ header .header-right .hamburger div {
 
 
 
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 .card-container {
-    display: flex;
-    flex-direction: column; /* Alignement vertical des cartes */
-    justify-content: center;
-}
-.card {
-    background-color: #f1f1f1;
-    padding: 45px;
-    border-radius: 20px;
-    margin-right: 500px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    margin-left: 15px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-}
- 
-.card img.article {
-    height: 200px;
-    overflow: hidden;
-    border-radius: 20px;
-
-}
-
-.verticale {
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    width: 50px;
-    background-color: #B71111;
-    height: 50px;
 }
 
+.card {
+    padding: 5vh;
+    border-radius: 20px;
+    margin: 2vh 5vh 2vh 2vh;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
 
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vh;
+}
 
+.card img.article {
+    width: 15%;
+    overflow: hidden;
+    border-radius: 20px;
+    min-width: 100px;
+}
+
+.side-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.verticale {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 2vh;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.verticale h1 {
+    margin-bottom: 1vh;
+    font-family: "sans-serif";
+}
+.verticale p {
+    margin-bottom: 1vh;
+    font-family: "cursive";
+}
+
+.compte {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.verticale img.logo-verticale {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1vh;
+}
 
 
 
