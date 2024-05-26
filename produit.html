@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="produit.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="./logo.png" alt="logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <div class="searchbarr">
+                        <input type="text" maxlength="12" placeholder="Rechercher..." class="searchbar" />
+                    </div>
+                </ul>
+                <div class="login-signup">
+                    <a href="">Login</a> or <a href="">Signup</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login-signup">
+                <a href="">Connexion</a> or <a href="">Poster</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="product-page">
+            <div class="product-image">
+                <img src="/pictures/iphone.png" alt="iPhone 12 64Go Purple">
+            </div>
+            <div class="product-details">
+                <div class="thermometer">
+                    <img src="/pictures/rouge.png" alt="Thermomètre Rouge">
+                </div>
+                <div class="degree">
+                    <button class="degree-btn">-</button>
+                    <span class="degree-value">512</span>
+                    <button class="degree-btn">+</button>
+                </div>
+                <h2>iPhone 12 64Go Purple</h2>
+                <p class="price">
+                    <span class="current-price">374$</span> <span class="old-price">499$</span>
+                </p>
+                <p class="condition">
+                    État de reconditionnement : "100% testé, vérifié, fonctionnel. L'apparence est comme neuve.
+                    Le téléphone a été remis à neuf de manière professionnelle en parfait état. 100% testé, vérifié, fonctionnel.
+                </p>
+                <ul class="additional-info">
+                    <li>En magasin : National · BackMarket</li>
+                    <li>-20% uniquement en prenant la livraison !</li>
+                    <li>Disponible en Île de France à prix normal !</li>
+                </ul>
+                <button class="deal-button">Voir le deal</button>
+                <p class="promo-code">utiliser le code promo <strong>Kz72PvIm</strong></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

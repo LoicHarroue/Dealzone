@@ -4,8 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            max-width: 800px;
+            margin: auto;
+        }
+        .thermometer {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .thermometer img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .thermometer h2 {
+            margin-top: 0;
+        }
+        .thermometer p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <H1>Test</H1>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="./logo.png" alt="logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <div class="searchbarr">
+                        <input type="text" maxlength="12" placeholder="Rechercher..." class="searchbar" />
+                    </div>
+                </ul>
+                <div class="login-signup">
+                    <a href="">Login</a> or <a href="">Signup</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login-signup">
+                <a href="">Connexion</a> or <a href="">Poster</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Comprendre nos Thermomètres : Votre Guide pour Évaluer les Offres sur notre Site</h1>
+            
+            <div class="thermometer">
+                <img src="/pictures/rouge.png" alt="Thermomètre Rouge">
+                <div>
+                    <h2>Thermomètre Rouge (Chaud) :</h2>
+                    <p>
+                        <strong>Signification :</strong> Ce thermomètre indique une offre très intéressante, mais avec une probabilité élevée qu'elle se termine rapidement.
+                    </p>
+                    <p>
+                        <strong>Que faire :</strong> Si vous voyez ce thermomètre, cela signifie que l'offre est particulièrement attrayante, mais agissez rapidement car il y a de fortes chances que l'offre soit épuisée ou expirée dans un délai court.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="thermometer">
+                <img src="/pictures/jaune.png" alt="Thermomètre Jaune">
+                <div>
+                    <h2>Thermomètre Jaune (Intermédiaire) :</h2>
+                    <p>
+                        <strong>Signification :</strong> Ce thermomètre indique une offre qui pourrait être intéressante, mais nécessite une validation supplémentaire.
+                    </p>
+                    <p>
+                        <strong>Que faire :</strong> Si vous voyez ce thermomètre, cela signifie que l'offre a du potentiel, mais vous devriez vérifier les détails supplémentaires ou les commentaires des autres utilisateurs avant de prendre une décision.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="thermometer">
+                <img src="/pictures/bleu.png" alt="Thermomètre Bleu">
+                <div>
+                    <h2>Thermomètre Bleu (Froid) :</h2>
+                    <p>
+                        <strong>Signification :</strong> Ce thermomètre indique une offre qui n'est pas intéressante ou qui a expiré.
+                    </p>
+                    <p>
+                        <strong>Que faire :</strong> Si vous voyez ce thermomètre, cela signifie que l'offre n'est pas recommandée ou qu'elle n'est plus disponible. Vous pouvez passer à d'autres offres plus attrayantes.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
