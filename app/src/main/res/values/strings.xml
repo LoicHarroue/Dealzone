@@ -11,4 +11,7 @@
     <string name="menu_hot">Les plus Hot du jour !</string>
     <string name="menu_sold">Réductions des comptes suivis</string>
     <string name="menu_categories">Catégories</string>
+
+    <string name="navbuttondesc">navigation open</string>
+    <string name="userbuttondesc">open user profile</string>
 </resources>
