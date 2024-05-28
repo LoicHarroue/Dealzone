@@ -17,18 +17,10 @@
             </div>
             <nav>
                 <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="produit.html">Products</a>
-                    </li>
-                    <li>
-                        <a href="">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="produit.html">Products</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
                     <div class="searchbarr">
                         <input type="text" maxlength="12" placeholder="Rechercher..." class="searchbar" />
                     </div>
@@ -40,7 +32,7 @@
         </div>
         <div class="header-right">
             <div class="login-signup">
-                <a href="">Connexion</a> or <a href="">Poster</a>
+                <a href="login.html">Connexion</a> or <a href="">Poster</a>
             </div>
             <div class="hamburger">
                 <div></div>
@@ -51,9 +43,19 @@
     </header>
     <div class="main-container">
         <div class="card-container">
-            <div class="card">
-                <img src="./pictures/iphone.png" class="article" alt="article" >
+            <div class="card" onclick="location.href='produit.html'">
+                <img src="./pictures/iphone.png" class="article" alt="article">
                 <div class="text-container">
+                    <div class="price-temperature">
+                        <div class="temperature">
+                            <img src="/pictures/rouge.png" alt="thermometer" class="thermometer-icon">
+                            <span class="temperature-value">512</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">374$</span>
+                            <span class="original-price">499$</span>
+                        </div>
+                    </div>
                     <h3>Iphone 12 64Go Purple</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
                 </div>
@@ -61,6 +63,16 @@
             <div class="card">
                 <img src="./pictures/casque.png" alt="article" class="article">
                 <div class="text-container">
+                    <div class="price-temperature">
+                        <div class="temperature">
+                            <img src="/pictures/jaune.png" alt="thermometer" class="thermometer-icon">
+                            <span class="temperature-value">300</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">199$</span>
+                            <span class="original-price">299$</span>
+                        </div>
+                    </div>
                     <h3>Casque SHOEI</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
                 </div>
@@ -68,6 +80,16 @@
             <div class="card">
                 <img src="./pictures/montre.png" alt="article" class="article">
                 <div class="text-container">
+                    <div class="price-temperature">
+                        <div class="temperature">
+                            <img src="/pictures/bleu.png" alt="thermometer" class="thermometer-icon">
+                            <span class="temperature-value">150</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">99$</span>
+                            <span class="original-price">199$</span>
+                        </div>
+                    </div>
                     <h3>Montre Tissot</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
                 </div>
@@ -90,24 +112,17 @@
                 </div>
             </div>
             <div class="verticale">
-                <h1>Pour vous</h1>
-                <div class="compte"><img src="product1.png" alt="verticale" class="logo-verticale">
-                    <p>les plus hot du jour!</p>
+                <h1>les plus hot du jour!</h1>
+                <!-- <div class="compte"><img src="product1.png" alt="verticale" class="logo-verticale">
+                    <p></p>
                 </div>
                 <div class="compte"><img src="product2.png" alt="verticale" class="logo-verticale">
                     <p>Autre produit</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
+
     <script>
         hamburger = document.querySelector(".hamburger");
         nav = document.querySelector("nav");

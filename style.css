@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "ubuntu";
+    
 }
 .logo img {
     width: 100%;
@@ -106,6 +107,8 @@ header .header-right .hamburger div {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
 }
 
 .text-container {
@@ -159,6 +162,45 @@ header .header-right .hamburger div {
     margin-right: 1vh;
 }
 
+.price-temperature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+}
+
+.temperature img.thermometer-icon {
+    width: 40px;
+    height: 60px;
+    margin-right: 5px;
+}
+.temperature-value {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.current-price {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
 
 
 
