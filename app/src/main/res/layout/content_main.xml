@@ -4,11 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_main">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <include
+        android:id="@+id/include2"
         layout="@layout/toolbar"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/Article1"
+        android:layout_width="0dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="26dp"
+        android:background="#FDDDDDDD"
+        android:backgroundTint="#FDDDDDDD"
+        android:foregroundTint="#FDDDDDDD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:iconTint="#FDDDDDDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:rippleColor="#FDDDDDDD"
+        app:strokeColor="#FDDDDDDD"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageViewarticle1"
+        android:layout_width="121dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Article1"
+        app:layout_constraintEnd_toEndOf="@+id/Article1"
+        app:layout_constraintStart_toStartOf="@+id/Article1"
+        app:layout_constraintTop_toTopOf="@+id/Article1"
+        app:srcCompat="@drawable/iphone_12_blanc_neuf_reconditionne_1"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textViewarticle1"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="99dp"
+        android:text="Iphone 12 64 Go Blanc"
+        app:layout_constraintBottom_toBottomOf="@+id/Article1"
+        app:layout_constraintEnd_toEndOf="@+id/Article1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewarticle1"
+        app:layout_constraintTop_toTopOf="@+id/Article1" />
+
+    <TextView
+        android:id="@+id/textViewprix1"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="34dp"
+        android:text="374$"
+        android:textColor="#B71111"
+        app:layout_constraintBottom_toBottomOf="@+id/Article1"
+        app:layout_constraintEnd_toStartOf="@+id/textViewprixbase1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewarticle1"
+        app:layout_constraintTop_toTopOf="@+id/textViewarticle1" />
+
+    <TextView
+        android:id="@+id/textViewprixbase1"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="34dp"
+        android:text="499$"
+        app:layout_constraintBottom_toBottomOf="@+id/Article1"
+        app:layout_constraintEnd_toEndOf="@+id/Article1"
+        app:layout_constraintStart_toStartOf="@+id/Article1"
+        app:layout_constraintTop_toTopOf="@+id/textViewarticle1" />
+
+    <ImageButton
+        android:id="@+id/Article2"
+        android:layout_width="0dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="26dp"
+        android:background="#FDDDDDDD"
+        android:backgroundTint="#FDDDDDDD"
+        android:foregroundTint="#FDDDDDDD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:iconTint="#FDDDDDDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Article1"
+        app:rippleColor="#FDDDDDDD"
+        app:strokeColor="#FDDDDDDD"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="121dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Article2"
+        app:layout_constraintEnd_toEndOf="@+id/Article2"
+        app:layout_constraintStart_toStartOf="@+id/Article2"
+        app:layout_constraintTop_toTopOf="@+id/Article2"
+        app:srcCompat="@drawable/casque_moto_integral_scorpion_exo_520_evo_air_solid_noir_mat_1"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/casque_moto_shoei_nxr2_mm93_retro_tc_10_tailles_du_2xs_au_2xl"
+        app:layout_constraintBottom_toBottomOf="@+id/Article2"
+        app:layout_constraintEnd_toEndOf="@+id/Article2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/Article2" />
+
+    <TextView
+        android:id="@+id/textViewprix2"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/_374"
+        android:textColor="#B71111"
+        app:layout_constraintBottom_toBottomOf="@+id/Article2"
+        app:layout_constraintEnd_toEndOf="@+id/Article2"
+        app:layout_constraintStart_toStartOf="@+id/Article2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewprixbase2"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/_499"
+        app:layout_constraintBottom_toBottomOf="@+id/Article2"
+        app:layout_constraintEnd_toEndOf="@+id/Article2"
+        app:layout_constraintStart_toStartOf="@+id/Article2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
