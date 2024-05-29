@@ -1,1 +1,1 @@
-Application dans la branche test et site dans la branche yasquifaut
+Application dans la branche test et site dans la branche yassquifaut
